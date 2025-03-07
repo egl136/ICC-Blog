@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="prism.js"></script>
+	<link href="https://fonts.bunny.net/css?family=poppins:700|inter:400|montserrat:600|merriweather:400i|source-sans-pro:400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="prism.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/problems-carrousel.css">
+	<link rel="stylesheet" type="text/css" href="../css/root.css">
+	<link rel="stylesheet" type="text/css" href="../css/keyframes.css">
+	<link rel="stylesheet" type="text/css" href="../css/animations.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/headeroptions.css">
+	<link rel="stylesheet" type="text/css" href="css/blogpost.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog Programación I</title>
+	<style type="text/css"></style>
+</head>
+<body class="landing-body">
+	<header class="header-container">
+		<nav class="header-navigation"><a href="" class="home-logo" onclick="goTo('landing','blog-post')">Home</a>
+		
+			<a class="header-option underline-right" onclick="goTo('materias','blog-post')">Materias</a>
+			<a class="header-option underline-center" onclick="goTo('categorias','blog-post')">Categorias</a>
+			<a class="header-option underline-left" onclick="goTo('entradas','blog-post')">Últimas entradas</a>
+		</nav><br>
+		<pre><a class="author" rel="author" style="padding-left: 9%;">  Materias<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right mx-2"><path d="m9 18 6-6-6-6"></path></svg>Programación I<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right mx-2"><path d="m9 18 6-6-6-6"></path></svg>Blog 1</a></pre>
+	</header>
+	<main class="blog-post">
+		
+		<h1 class="post-title-text" class="post-title-text" style="color: purple;">Primer blog</h1>
+		<a class="author" rel="author">Por: Eduardo Guevara Lozano • </a>
+			<a class="author" rel="author">A23000992</a>
+		<article class="post">
+			<h2 class="post-title-text">Preguntas</h2>
+			<section>
+			<h3 class="post-title-text">¿Que me parece hasta el momento el lenguaje de programación C, cuál es su principal uso en el 2025?</h3>
+			<h4 class="post-title-text">Mi historia con C</h4>
+			<p>
+				Dado que estudié programación en el bachillerato, el primer lenguaje que utilice fue C++. Ya llevaba unos meses estudiandolo antes de que fuese parte de mis materias, lo cual era conflictivo porque no entendía del todo el por que. Al empezar la materia, comprendí enseguida todo lo ue no lograba entender antes, y en ese primer semestre me gustó bastante para aprender a programar.</p>
+				<p>Los años pasaron después de ese primer semestre y C++ pasó a un muy segundo plano, hasta que entré a bioquimica en 2020 y empecé a hacer cosas con c++. Sin embargo lo dejé enseguida.</p>
+				<p>No fue sino hasta 2022 que comprendí su utilidad e importancia de forma clara, siendo que C y C++ son lenguajes de bajo nivel, es decir, son fundamentales para cualquier aplicación a nivel de SO.</p>
+				<h4 class="post-title-text">Respondiendo a la pregunta</h4>
+				<p>Apartir de entonces y hasta la actualidad, puedo decir, que si bien no programo en c(lo último que realicé fue una implementación de glut), es un lenguaje que tengo en alta estima por sus posibilidades. A pesar de ser un lenguaje tan viejo, sigue siendo tan poderoso como, por ejemplo, rust. </p>
+				<p>Su utilidad a día de hoy sigue siendo la de crear la capa básica de lenguajes de nivel medio, programación de bios y demás tipos de software a bajo nivel. Incluso siendo un lenguaje tan bueno, Rust entró al juego, y con su sintaxis mas legible pero con la eficiencia de C está tomando terreno rápidamente. De pronto se genera discusión en la comunidad de desarrolladores de bajo nivel sobre las bondades de ambos lenguajes y entornos. Igualmente, algunos cuantos sistemas empiezan a tener alternativas escritas en Rust en vez de C, lo cual solo enriquece al panorama general. 
+			</p>
+			<aside class="comparison-container" > 
+				<pre class="code-comparison"><code class="code-block language-cpp">
+//Ejemplo manejo de memoria C++
+int main() {
+    std::string s = "Hello";
+    std::string& r1 = s;
+    std::string& r2 = s; 
+    //Este codigo compila, 
+    //pero puede causar data race
+}</code></pre>
+<div class="comparison-divisor"></div>
+<pre class="code-comparison"><code class="code-block language-rust">
+//Ejemplo de manejo de memoria Rust
+fn main() {
+    let mut s = String::from("Hello");
+    let r1 = &mut s;
+    let r2 = &mut s; 
+    // Este no compilara 
+    // porque s ya esta siendo
+    // usado por r1
+}
+</code></pre>
+			</aside></section>
+		<section>
+			<h3 class="post-title-text">¿Consideras importante la existencia de más de un lenguaje de programación?</h3>
+
+			<p>Por supuesto, y la mejor forma de hacer analogía a la cuestión es la siguiente:</p>
+				<blockquote>La llave inglesa puede ser usada tanto para usar tuercas como para martillar(sigue siendo un objeto contundente), sin embargo existen los martillos, e incluso entre martillos hay varios tipos.</blockquote>
+				
+			<p>Es decir, cada herramienta es única en su especialidad, siendo que cada labor necesita su herramienta especializada. Entendiendo a los lenguajes como herramientas es como se puede comprender esta analogía.</p>
+			<p>Ahora bien, entrando de lleno a la programación, podemos hallar una gran variedad de lenguajes con usos especificos. Tomaré como ejemplo los lenguajes para cliente y los lenguajes de servidor.</p>
+			<p>Los lenguajes para cliente son aquellos que se ejecutan en la computadora que el usuario final esta utilizando, mientras que los lenguajes de servidor son aquellos que se ejecutan en una computadora externa(hablando de web, puesto que según el sistema es la definición).</p>
+			<p>Los lenguajes client-side(del lado del cliente) tienen carencias como lo son el acceso a archivos de la computadora de forma directa, el tratamiento de peticiones de entrada y demás; sin embargo suelen estar especializadas en la interacción del usuario con la interfaz. Ejemplo de este lenguaje es Javascript.</p>
+			<p>Por otro lado, los lenguajes server-side(lado del servidor) tienen carencias al momento de tratar de interactuar con, por ejemplo, el navegador que usa el usuario directamente; sin embargo estos lenguajes pueden, dado que tienen la capacidad de acceder a archivos del servidor, acceder a bases de datos, manipular los datos de entrada y hacer calculos complejos o tratamiento de datos. Ejemplo de un lenguaje asi es PHP.</p>
+			<aside class="comparison-container">
+				<pre class="code-comparison"><code class="code-block language-javascript">
+function animarElemento(elementoID){
+	let elemento = document.querySelector("#"+elementoID);
+	element.classList.add("clase-animada"); 
+}
+</code></pre><div class="comparison-divisor"></div>
+<pre class="code-comparison"><code class="code-block language-php">
+$busqueda = $_GET['busqueda'];
+$resultados = obtenerResultadosBusqueda($busqueda);
+echo json_encode($resultados);
+</code></pre>
+			</aside>	
+		</section>
+		<section class="playground-comparison">
+			<h3 class="post-title-text">Playground</h3>
+			<p>Para comparar las instrucciones de algunos lenguajes, pueden seleccionar el problema y el lenguaje en cada caja.</p>
+			<section class="problems-container">
+				<h4 class="post-title-text">Problemas:</h4>
+				<div class="problems-carrousel">
+					<article class="problem-card selected-problem" id="problem-addition" onclick="selectProblem('problem-addition',0);generarCodigos()"> 
+						<h5 class="post-title-text" class="problem-title">Suma de dos numeros</h5>
+						<p class="problem-paragraph">Suma dos numeros enteros(a y b), que para la prueba serán 5 y 10 respectivamente.</p>
+					</article>
+					<article class="problem-card" id="problem-text" onclick="selectProblem('problem-text',1);generarCodigos()"> 
+						<h5 class="post-title-text" class="problem-title">Salida de texto</h5>
+						<p class="problem-paragraph">Muestra texto en interfaz o consola</p>
+						
+					</article>
+					<article class="problem-card" id="problem-array" onclick="selectProblem('problem-array',2);generarCodigos()"> 
+						<h5 class="post-title-text" class="problem-title">Arreglos</h5>
+						<p class="problem-paragraph">Manejo básico de arreglos.</p>
+					</article>
+					
+				</div>
+			</section>
+			<section class="code-vs">
+				<h4 class="post-title-text">Comparador de código</h4>
+				<div class="select-group-row">
+					<article class="language-selection">
+					<select class="language-select select-left" id="select1" onchange="generarCodigos()">
+						<option selected value="">
+							Leguajes
+						</option>
+						<option value="cpp">
+							C/C++
+						</option>
+						<option value="php">
+							PHP
+						</option>
+						<option value="javascript">
+							JavaScript
+						</option>
+						<option value="java">
+							Java
+						</option>
+					</select>
+				</article>
+				<article class="language-selection select-right" >
+					<select class="language-select" id="select2" onchange="generarCodigos()">
+						<option selected value="">
+							Leguajes
+						</option>
+						<option value="cpp">
+							C/C++
+						</option>
+						<option value="php">
+							PHP
+						</option>
+						<option value="javascript">
+							JavaScript
+						</option>
+						<option value="java">
+							Java
+						</option>
+					</select>
+				</article>
+				</div>
+				
+				<aside class="comparison-container comparison-selecter">
+				<pre class="code-comparison" id="codeprebox1"><code class="code-block language-javascript" id="codebox1">
+
+</code></pre><div class="comparison-divisor"></div>
+<pre class="code-comparison" id="codeprebox2"><code class="code-block language-python" id="codebox2">
+
+</code></pre>
+			
+			</aside>	
+			<aside class="execute-samples">
+				<div class="execution-container">
+					<button class="execution-button" id="execution-button1">
+						Ejecutar
+					</button>
+					<div class="execution-result" id="execution-result1">
+						
+					</div>
+				</div>
+				<div class="execution-container">
+					<button class="execution-button" id="execution-button2">
+						Ejecutar
+					</button>
+					<div class="execution-result" id="execution-result2">
+					
+					</div>
+				</div>
+			</aside>
+			</section>
+		</section>
+	</article>
+	</main>
+</body>
+<script type="text/javascript" src="js/codesSamples.js"></script>
+<script type="text/javascript">
+	
+</script>
+<script type="text/javascript" src="../js/pagesManager.js"></script>
+</html>
