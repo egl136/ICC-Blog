@@ -1,0 +1,19 @@
+.materias-container{
+	display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+}
+.materia-card{
+	background-color: white;
+	border-radius: 25px;
+	color: #547;
+	padding-left: 2%;
+	font-weight: bold;
+	transition: background-color 0.5s;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .35);
+}
+.materia-card:hover{
+	background-color: #78eedd;
+}

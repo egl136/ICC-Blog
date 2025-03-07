@@ -1,0 +1,9 @@
+.drown{animation: drown 0.25s forwards !important;}
+.go-down{animation: go-down 0.25s forwards ;}
+.hide-right{transform-origin:right bottom;animation: hideRight 0.25s forwards !important;}
+.appear-from-left{transform-origin:left bottom;animation: appearFromLeft 0.5s forwards;}
+.hide-scroll{overflow: hidden;}
+.fly{animation: fly 0.25s forwards !important;}
+.go-up{animation: go-up 0.25s forwards ;}
+.hide-left{transform-origin:left bottom;animation: hideLeft 0.25s forwards !important;}
+.appear-from-right{animation: appearFromRight 0.25s forwards;}

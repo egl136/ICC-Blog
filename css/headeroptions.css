@@ -1,0 +1,24 @@
+.header-option{position: relative;}
+/*.header-option::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0%;
+  	left: 0;
+  	background-color: #0087ca;
+  	transition: transform 0.25s ease-out;
+}
+.header-option:hover::after {transform: scaleX(1);}
+.header-option.underline-right::after{transform-origin: bottom right;}
+.header-option.underline-right:hover::after{transform-origin: bottom left;}
+.header-option.underline-left::after{transform-origin: bottom left;}
+.header-option.underline-left:hover::after{transform-origin: bottom right;}
+.header-option-selected{
+	
+	color: #0087ca;
+}*/
+.header-option:hover{
+	color: blue;
+}
