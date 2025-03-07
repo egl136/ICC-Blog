@@ -1,1 +1,75 @@
+/*root.css*/
+	:root{
+		--pink-blue-gradient: linear-gradient(225deg, #b3fffd 0, #e3e6ff 50%, #fde5f5 100%);
+		--bright-red: #FF000D;
+		--dark-purple: #00002a;
+	}
+	body, html{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
 
+	}
+	body{
+		background: var(--pink-blue-gradient);
+		background-attachment: fixed; 	
+		overflow: hidden;
+	}
+	main{
+		padding-left: 25%;
+		padding-right: 25%;
+		padding-bottom: 5%;
+		padding-top: 1%;
+		width: 40%;
+		height: auto;
+		
+		
+	}
+	h1, h2, h3 {
+    	font-family: 'Poppins', sans-serif;
+    	font-weight: 700;
+	}
+	p,article,main{
+		font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+	}
+	h1{
+		font-size: 2.625rem;
+	}
+	h2{
+		font-size: 2.125rem;
+	}
+	h3{
+		font-size: 1.75rem;
+	}
+	h4{
+		font-size: 1.5rem;
+	}
+	h5{
+		font-size:1.25rem;
+	}
+	p{
+		font-size: 1.15rem;
+		text-wrap: pretty;
+	}
+	a{
+		color: orange;
+		text-decoration: none;
+	}
+	blockquote {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.25rem;
+    background: linear-gradient(225deg, #b3fffd 0, #e3e6ff 50%, #fde5f5 100%);
+
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .35);
+    color: black;
+    padding: 1%;
+}
+.author {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    color: gray;
+}
